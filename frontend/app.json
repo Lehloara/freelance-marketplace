@@ -16,17 +16,23 @@
       "supportsTablet": true
     },
     "android": {
-  "adaptiveIcon": {
-    "foregroundImage": "./assets/adaptive-icon.png",
-    "backgroundColor": "#ffffff"
-  },
-  "windowSoftInputMode": "adjustResize"
-},
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "windowSoftInputMode": "adjustResize",
+      "package": "com.lehloara.frontend"
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-secure-store"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "82dcb3f8-0581-4de0-a7da-1e162fb25c68"
+      }
+    }
   }
 }

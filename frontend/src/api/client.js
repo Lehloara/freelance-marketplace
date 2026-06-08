@@ -2,12 +2,10 @@ import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
 
 const API_BASES = [
-   'http://192.168.1.110:5000/api',
+  'https://freelance-marketplace-uglf.onrender.com/api',
+  
+  'http://192.168.1.110:5000/api',
   'http://192.168.43.121:5000/api',
- 
-  
-  
-  
 ];
 
 let API_URL = API_BASES[0];
@@ -15,7 +13,7 @@ let API_URL = API_BASES[0];
 const api = axios.create({
   baseURL: API_URL,
   headers: { 'Content-Type': 'application/json' },
-  timeout: 10000,
+  timeout: 15000, 
 });
 
 api.interceptors.request.use(async (config) => {
